@@ -3,6 +3,6 @@
 4:I[97367,["/AIU_gem/_next/static/chunks/36ta_0m5y5ytl.js","/AIU_gem/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
 5:"$Sreact.suspense"
 :HL["/AIU_gem/_next/static/chunks/1vgj49l58n3n7.css","style"]
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"params":"$@3"}],[["$","link","0",{"rel":"stylesheet","href":"/AIU_gem/_next/static/chunks/1vgj49l58n3n7.css","precedence":"next"}],["$","script","script-0",{"src":"/AIU_gem/_next/static/chunks/3t0dsrs65h7cc.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"KO0TtnrszaxKqTk8gKMho"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"params":"$@3"}],[["$","link","0",{"rel":"stylesheet","href":"/AIU_gem/_next/static/chunks/1vgj49l58n3n7.css","precedence":"next"}],["$","script","script-0",{"src":"/AIU_gem/_next/static/chunks/3t0dsrs65h7cc.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BqjTRmvrzYrU-UhrNWUIv"}
 3:{"branch":"portharcourt"}
 6:null

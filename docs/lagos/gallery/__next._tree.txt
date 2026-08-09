@@ -1,3 +1,3 @@
 :HL["/AIU_gem/_next/static/chunks/0eizuqzqv7qei.css","style"]
 :HL["/AIU_gem/_next/static/chunks/0xmb5bks5_2c9.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"branch","param":{"type":"d","key":"lagos","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"gallery","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"KO0TtnrszaxKqTk8gKMho"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"branch","param":{"type":"d","key":"lagos","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"gallery","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"BqjTRmvrzYrU-UhrNWUIv"}
