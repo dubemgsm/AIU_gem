@@ -1,0 +1,144 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "name": "Admin President",
+      "role": "super_admin",
+      "assigned_branch": "global"
+    },
+    {
+      "id": 2,
+      "username": "lagos_admin",
+      "password": "lagos123",
+      "name": "Nze Bartholomew Chijioke",
+      "role": "branch_admin",
+      "assigned_branch": "lagos"
+    },
+    {
+      "id": 3,
+      "username": "abuja_admin",
+      "password": "abuja123",
+      "name": "Engr. Fidelis Anayo",
+      "role": "branch_admin",
+      "assigned_branch": "abuja"
+    },
+    {
+      "id": 4,
+      "username": "ph_admin",
+      "password": "ph123",
+      "name": "Chief Ichie Jude Ezenwa",
+      "role": "branch_admin",
+      "assigned_branch": "portharcourt"
+    },
+    {
+      "id": 5,
+      "username": "lagos_member",
+      "password": "member123",
+      "name": "Chinedu Okeke",
+      "role": "member",
+      "assigned_branch": "lagos"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Amesi Indigenes Inducted Into Anambra Health Scheme (ASHIA)",
+      "content": "In a landmark development sponsored by the Amesi Improvement Union (AIU) National Body, over 500 women and children in Amesi have been enrolled into the Anambra State Health Insurance Agency (ASHIA) scheme. This initiative aims to provide accessible and quality healthcare services to the vulnerable populations in the community. Chief Dr. Aloysius Ofordile during the flags-off ceremony stated that this health outreach represents a core pillar of the AIU 2026 development agenda.",
+      "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=800&auto=format&fit=crop",
+      "published_at": "2026-07-10T12:00:00Z",
+      "target_branch": "global",
+      "author": "AIU Press Secretariat",
+      "tags": [
+        "Healthcare",
+        "Empowerment",
+        "National"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Lagos Branch Announces Annual Cultural Day and Akalabo Warm-Up Festival",
+      "content": "The executive committee of AIU Lagos Branch has officially announced October 15, 2026, as the Lagos Branch Annual Cultural Day. This year's celebration will double as a preparation and awareness campaign for the upcoming triennial Akalabo Festival in Amesi. The event will showcase traditional Igbo dances, culinary competitions, and fundraising for the Lagos Branch Youth Endowment Fund. Nze Bartholomew Chijioke invites all families to attend in full traditional regalia.",
+      "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop",
+      "published_at": "2026-07-05T10:00:00Z",
+      "target_branch": "lagos",
+      "author": "Lagos Publicity Secretary",
+      "tags": [
+        "Culture",
+        "Lagos",
+        "Akalabo"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Abuja Branch Empowers 50 Youths via IT and Entrepreneurship Program",
+      "content": "AIU Abuja Branch has concluded its 6-week intensive training program in Digital Marketing, Web Development, and Business Management. Fifty youths of Amesi origin residing in the FCT participated in the program. During the graduation ceremony at Amesi House, Abuja, laptops and start-up grants of N250,000 each were distributed to the top ten graduates. Engr. Fidelis Nwankwo emphasized the necessity of equipping youths with 21st-century digital competencies.",
+      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop",
+      "published_at": "2026-06-28T09:00:00Z",
+      "target_branch": "abuja",
+      "author": "Abuja Welfare Committee",
+      "tags": [
+        "Youth",
+        "Empowerment",
+        "Abuja"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Port Harcourt Branch to Launch University Scholarship Scheme",
+      "content": "The Port Harcourt branch is proud to unveil the AIU-PH Academic Excellence Scholarship for the 2026/2027 academic session. The scheme will sponsor ten deserving Amesi indigenes studying engineering, computer science, and medical sciences in Nigerian federal universities. Applications open next week, and candidates will undergo a merit-based examination. Chief Ichie Jude Ezenwa noted that education remains the greatest driver of community elevation.",
+      "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=800&auto=format&fit=crop",
+      "published_at": "2026-06-20T08:00:00Z",
+      "target_branch": "portharcourt",
+      "author": "PH Education Board",
+      "tags": [
+        "Scholarship",
+        "Education",
+        "PortHarcourt"
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "id": "l1",
+      "title": "Lagos Executives Inauguration",
+      "imageUrl": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=600&auto=format&fit=crop",
+      "date": "May 2026",
+      "uploader": "Nze Bartholomew Chijioke",
+      "description": "The newly elected executive committee members taking their oath of office.",
+      "branch_id": "lagos",
+      "category": "portrait"
+    },
+    {
+      "id": "l2",
+      "title": "Monthly General Assembly Meeting",
+      "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=600&auto=format&fit=crop",
+      "date": "June 2026",
+      "uploader": "Nze Bartholomew Chijioke",
+      "description": "Members debating community development projects at the Lagos Event Hall.",
+      "branch_id": "lagos",
+      "category": "event"
+    },
+    {
+      "id": "a1",
+      "title": "Abuja Amesi House Groundbreaking",
+      "imageUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop",
+      "date": "January 2026",
+      "uploader": "Engr. Fidelis Nwankwo",
+      "description": "Laying the foundation stone of the Abuja Amesi House in Kaura District.",
+      "branch_id": "abuja",
+      "category": "portrait"
+    },
+    {
+      "id": "p1",
+      "title": "PH Civic Centre Commissioning",
+      "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop",
+      "date": "March 2026",
+      "uploader": "Chief Ichie Jude Ezenwa",
+      "description": "Opening the doors to our newly renovated AIU Civic Centre in Trans-Amadi.",
+      "branch_id": "portharcourt",
+      "category": "portrait"
+    }
+  ]
+}

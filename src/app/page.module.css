@@ -1,0 +1,658 @@
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)),
+              url('https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.9) 80%);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.heroBadge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(4, 106, 56, 0.08);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-headings);
+}
+
+.heroTitle {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 4rem;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroActions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .heroActions {
+    flex-direction: row;
+  }
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.sectionTitleContainer {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionSubtitle {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  .sectionTitle {
+    font-size: 2.75rem;
+  }
+}
+
+/* Town Showcase Grid */
+.showcaseGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .showcaseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.showcaseCard {
+  padding: 2.5rem;
+}
+
+.showcaseIcon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.showcaseCardTitle {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.showcaseCardText {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.villagesList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.villageItem {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.villageItem::before {
+  content: '✦';
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+
+/* Branches Section */
+.bgSecondary {
+  background: #f8fafc;
+}
+
+.branchesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .branchesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.branchCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.branchImageContainer {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.branchImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-slow);
+}
+
+.branchCard:hover .branchImage {
+  transform: scale(1.1);
+}
+
+.branchContent {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.branchName {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.branchLocation {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.branchDesc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.branchDetailsList {
+  list-style: none;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.branchBtn {
+  width: 100%;
+  text-align: center;
+}
+
+/* News Section */
+.newsHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .newsHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.newsControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filterBtn {
+  background: #f1f5f9;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: var(--text-secondary);
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: var(--transition-fast);
+}
+
+.filterBtn:hover,
+.filterBtnActive {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.filterBtnActive {
+  box-shadow: 0 4px 12px rgba(4, 106, 56, 0.2);
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  transition: var(--transition-fast);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(4, 106, 56, 0.15);
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .newsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .newsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.newsCard {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  height: 100%;
+  overflow: hidden;
+}
+
+.newsImageContainer {
+  height: 200px;
+  position: relative;
+}
+
+.newsImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.newsTag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--primary);
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.newsMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.newsCardTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.newsExcerpt {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.newsReadMore {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.newsReadMore::after {
+  content: '→';
+  transition: transform var(--transition-fast);
+}
+
+.newsCard:hover .newsReadMore::after {
+  transform: translateX(4px);
+}
+
+/* Post News Area */
+.postNewsContainer {
+  margin-top: 4rem;
+  padding: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .formGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroupFull {
+  grid-column: 1 / -1;
+}
+
+.formLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+  padding: 0.75rem 1rem;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.formInput:focus,
+.formSelect:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(4, 106, 56, 0.15);
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.formSubmit {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+/* Modal Dialog */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+  background: #ffffff;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.modalClose {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(0, 0, 0, 0.06);
+  border: none;
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+  z-index: 10;
+}
+
+.modalClose:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.modalHero {
+  height: 350px;
+  width: 100%;
+  position: relative;
+}
+
+.modalHeroImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modalBody {
+  padding: 3rem;
+}
+
+.modalMeta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.modalTitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.modalText {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Contact Us Styling */
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 992px) {
+  .contactGrid {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.contactInfoCard {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactInfoItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.contactIcon {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.contactInfoTitle {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.contactInfoText {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.contactFormCard {
+  padding: 3rem;
+}
+
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--primary);
+  border: 1px solid var(--accent);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  z-index: 1001;
+  animation: slideInLeft 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
